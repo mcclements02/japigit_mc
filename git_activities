@@ -11,4 +11,17 @@ bash-3.2$ ge[Kit init
 Reinitialized existing Git repository in /Users/matthew/Desktop/ALPHA/japigit/.git/
 bash-3.2$ git init[5Ppwd[1Plsifconfigsudo mysqld_safe —skip-grant-tables[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[14P -u root -p[C[C[C[C[C[C[C[C[C[C[5P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[5@sudo [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[5P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[5@sudo [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cd_safe —skip-grant-tables[C[C[C[C[C[C[C[C[C[Cifconfig[Kls[Kpwdgit init[Kgit config --global user.name M[K"Matthew C"[1P"C"l"e"m"e"n"t"s"
 bash-3.2$ git config --global user.email mccl[K[Klement[K[Kn3[K4[K[K[Kn4[K[K3[Ken4@asu.edu
+bash-3.2$ git add.[K .
+bash-3.2$ git commit –am "update"
+error: pathspec '–am' did not match any file(s) known to git
+error: pathspec 'update' did not match any file(s) known to git
+bash-3.2$ git commit –am "update"[K[C[1Pupdate[C[C[C[C[C[C[K[K[K[K[K[K'udate'
+error: pathspec '–am' did not match any file(s) known to git
+error: pathspec 'udate' did not match any file(s) known to git
+bash-3.2$ git commit –am 'udate'[C[K"[C[C[C[C[C[C[C[C[C[C[Kgit commit -m "first commit!"
+bash: !": event not found
+bash-3.2$ git commit –am 'udate""update"[1P'udate"[C[C[C[C[C[C[C[C[C[C[Kgit commit -m "first commit!"[C[1P[1@"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K"
+[master (root-commit) efedecf] first commit
+ 1 file changed, 14 insertions(+)
+ create mode 100644 git_activities
 bash-3.2$ 
