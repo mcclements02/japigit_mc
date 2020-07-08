@@ -24,4 +24,37 @@ bash-3.2$ git commit –am 'udate""update"[1P'udate"[C[C[C[
 [master (root-commit) efedecf] first commit
  1 file changed, 14 insertions(+)
  create mode 100644 git_activities
+bash-3.2$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   git_activities[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+bash-3.2$ git statuscommit -m "first commit"[1@a
+[master 835084c] first commit
+ 1 file changed, 13 insertions(+)
+bash-3.2$ git commit -am "first commit"[C[C[C[C[C[C[C[C[C[C[C[C[C[Cstatus[K
+On branch master
+nothing to commit, working tree clean
+bash-3.2$ git status –s
+On branch master
+nothing to commit, working tree clean
+bash-3.2$ echo “hello there” > hello.txt
+bash-3.2$ echo “hello there” > hello.txt[C[C[C[C[C[C[C[C[C[C[17Pgit status –s[K
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   git_activities[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mhello.txt[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+bash-3.2$ git statusecho “hello there” > hello.txt[C[C[C[C[C[C[C[C[C[C[17Pgit status –s
+On branch master
+nothing to commit, working tree clean
 bash-3.2$ 
