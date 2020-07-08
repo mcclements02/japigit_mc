@@ -1,0 +1,14 @@
+Script started on Wed Jul  8 00:44:11 2020
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+[?1034hbash-3.2$ ls
+git_activities
+bash-3.2$ mdk[Kd[K[K[Kpwd
+/Users/matthew/Desktop/ALPHA/japigit
+bash-3.2$ ge[Kit init
+Reinitialized existing Git repository in /Users/matthew/Desktop/ALPHA/japigit/.git/
+bash-3.2$ git init[5Ppwd[1Plsifconfigsudo mysqld_safe —skip-grant-tables[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[14P -u root -p[C[C[C[C[C[C[C[C[C[C[5P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[5@sudo [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[5P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[5@sudo [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cd_safe —skip-grant-tables[C[C[C[C[C[C[C[C[C[Cifconfig[Kls[Kpwdgit init[Kgit config --global user.name M[K"Matthew C"[1P"C"l"e"m"e"n"t"s"
+bash-3.2$ git config --global user.email mccl[K[Klement[K[Kn3[K4[K[K[Kn4[K[K3[Ken4@asu.edu
+bash-3.2$ 
