@@ -57,4 +57,141 @@ no changes added to commit (use "git add" and/or "git commit -a")
 bash-3.2$ git statusecho “hello there” > hello.txt[C[C[C[C[C[C[C[C[C[C[17Pgit status –s
 On branch master
 nothing to commit, working tree clean
-bash-3.2$ 
+bash-3.2$ git add .   [K[K[K[K.
+bash-3.2$ git add .status –s[K
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mmodified:   git_activities[m
+	[32mnew file:   hello.txt[m
+
+bash-3.2$ echo “We are testing git status” >> hello.txt
+bash-3.2$ echo “We are testing git status” >> hello.txt[C[C[C[C[C[C[C[C[C[Cgit status[K
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mmodified:   git_activities[m
+	[32mnew file:   hello.txt[m
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   git_activities[m
+	[31mmodified:   hello.txt[m
+
+bash-3.2$ get[K[Kit diff
+[?1h=[1mdiff --git a/git_activities b/git_activities[m[m
+[1mindex 047e8a8..795fee8 100644[m[m
+[1m--- a/git_activities[m[m
+[1m+++ b/git_activities[m[m
+[36m@@ -57,4 +57,26 @@[m [mno changes added to commit (use "git add" and/or "git commit [m [36m[m[m-a")[m[m
+ bash-3.2$ echo “hello there” > hello.txt[7m^M[27mgit status –s[m[m
+ On branch master[m[m
+ nothing to commit, working tree clean[m[m
+[32m+[m[32mbash-3.2$ git add .[m[41m[7m^M[27m[m[m
+[32m+[m[32mbash-3.2$ git status[m[41m[7m^M[27m[m[m
+[32m+[m[32mOn branch master[m[41m[7m^M[27m[m[m
+[32m+[m[32mChanges to be committed:[m[41m[7m^M[27m[m[m
+[32m+[m[32m  (use "git restore --staged <file>..." to unstage)[m[41m[7m^M[27m[m[m
+[32m+[m       [32m[32mmodified:   git_activities[m[m[41m[7m^M[27m[m[m
+[32m+[m       [32m[32mnew file:   hello.txt[m[m[41m[7m^M[27m[m[m
+[32m+[m[41m[7m^M[27m[m[m
+[32m+[m[32mbash-3.2$ echo “We are testing git status” >> hello.txt[m[41m[7m^M[27m[m[m
+[32m+[m[32mbash-3.2$ echo “We are testing git status” >> hello.txt[7m^M[27mgit status[m[41m[7m^M[27m[m[m
+[32m+[m[32mOn branch master[m[41m[7m^M[27m[m[m
+[32m+[m[32mChanges to be committed:[m[41m[7m^M[27m[m[m
+[32m+[m[32m  (use "git restore --staged <file>..." to unstage)[m[41m[7m^M[27m[m[m
+[32m+[m       [32m[32mmodified:   git_activities[m[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KBB[K[32m+[m       [32m[32mnew file:   hello.txt[m[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32mChanges not staged for commit:[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[KOO[KBB[K[32m+[m[32m  (use "git add <file>..." to update what will be committed)[m[41m[7m^M[27m[m[m
+:[K[K [KESCESC[K::[K:[K[K[?1l>bash-3.2$ git diff[Kgit diffstatus
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mmodified:   git_activities[m
+	[32mnew file:   hello.txt[m
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   git_activities[m
+	[31mmodified:   hello.txt[m
+
+bash-3.2$ git commit –m "comment" 
+error: pathspec '–m' did not match any file(s) known to git
+error: pathspec 'comment' did not match any file(s) known to git
+bash-3.2$ git commit –m "comment" [C[K[K"[1Pcomment""comment"
+error: pathspec '–m' did not match any file(s) known to git
+error: pathspec 'comment' did not match any file(s) known to git
+bash-3.2$ git commit –m "comment"[1P[1@-[C[C
+[master 7b624ed] comment
+ 2 files changed, 34 insertions(+)
+ create mode 100644 hello.txt
+bash-3.2$ git commit -m "comment"–[C[C[C[C[C[C[C[C[C[C[C [C[C[C[C[C[C[C[C[C[C[C[C[C[Cstatus[K
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   git_activities[m
+	[31mmodified:   hello.txt[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+bash-3.2$ git statuscommit -m "comment"–[C[C[C[C[C[C[C[C[C[C[C [C[C[C[C[C[C[C[C[C[C[C[C[C[Cstatus[K[2Pdiffstatusecho “We are testing git status” >> hello.txt[C[C[C[C[C[C[C[C[C[Cgit status[K[1Padd .status –s[4Padd .
+bash-3.2$ git add .statuscommit -m "comment"[C[C[C[C[C[C[C[C[C[C[C[C[C[Cstatus[K
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mmodified:   git_activities[m
+	[32mmodified:   hello.txt[m
+
+bash-3.2$ git log
+[?1h=[33mcommit 7b624ed380baa712e5d9b0b728074125d8d56cbc[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m[m
+Author: Matthew Clements <mclemen4@asu.edu>[m
+Date:   Wed Jul 8 00:50:50 2020 -0700[m
+[m
+    comment[m
+[m
+[33mcommit 835084c7f0b4758c9ad16f6055a674f0d04135c5[m[m
+Author: Matthew Clements <mclemen4@asu.edu>[m
+Date:   Wed Jul 8 00:48:35 2020 -0700[m
+[m
+    first commit[m
+[m
+[33mcommit efedecf43d0f8c51295be9ae56730f99a679f34b[m[m
+Author: Matthew Clements <mclemen4@asu.edu>[m
+Date:   Wed Jul 8 00:47:53 2020 -0700[m
+[m
+    first commit[m
+[K[?1l>bash-3.2$ git logstatus[1Padd .statuscommit -m "comment"–[C[C[C[C[C[C[C[C[C[C[C [C[C[C[C[C[C[C[C[C[C[C[C[C[Cstatus[K[2Pdiffstatus -s
+[32mM[m[31mM[m git_activities
+[32mM[m  hello.txt
+bash-3.2$ get[K[Kit log -oneline
+fatal: unrecognized argument: -oneline
+bash-3.2$ git log -oneline[C[C[C[C[C[C[C[C[C[C[Kgit log -oneline[K[K[K[K[K[K[K[K[K
+[?1h=[33mcommit 7b624ed380baa712e5d9b0b728074125d8d56cbc[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m[m
+Author: Matthew Clements <mclemen4@asu.edu>[m
+Date:   Wed Jul 8 00:50:50 2020 -0700[m
+[m
+    comment[m
+[m
+[33mcommit 835084c7f0b4758c9ad16f6055a674f0d04135c5[m[m
+Author: Matthew Clements <mclemen4@asu.edu>[m
+Date:   Wed Jul 8 00:48:35 2020 -0700[m
+[m
+    first commit[m
+[m
+[33mcommit efedecf43d0f8c51295be9ae56730f99a679f34b[m[m
+Author: Matthew Clements <mclemen4@asu.edu>[m
+Date:   Wed Jul 8 00:47:53 2020 -0700[m
+[m
+    first commit[m
+[K[?1l>bash-3.2$ git log --oneline
+[?1h=[33m7b624ed[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m comment[m
+[33m835084c[m first commit[m
+[33mefedecf[m first commit[m
+[K[?1l>bash-3.2$ git bri[Kanch 
+[?1h=* [32mmaster[m[m
+[K[?1l>bash-3.2$ echo "master version" >> hello.tx
+bash-3.2$ gim[Kt commit -am "
